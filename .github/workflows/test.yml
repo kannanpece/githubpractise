@@ -1,0 +1,10 @@
+name: implement build
+
+on: workflow_dispatch
+
+jobs:
+ say hello:
+  runs-on:ubuntu-latest
+  steps:
+    - name: print gereeting
+    - echo "hello github actions"
