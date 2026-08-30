@@ -1,10 +1,11 @@
-name: implement build
 
+name: implement build
 on: workflow_dispatch
 
 jobs:
- say-hello:
-  runs-on:ubuntu-latest
-  steps:
-    - name: print gereeting
-    - echo "hello github actions"
+  say-hello:
+    name: Say hello
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "hello github actions"
